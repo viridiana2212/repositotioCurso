@@ -1,0 +1,83 @@
+<!DOCTYPE HTML><!-- etiqueta necesaria para html  -->
+<html lang="es"><!-- etiqueta para el lenguaje de la pagina  -->
+	<head>
+		<title>Mi primera web</title><!-- etiqueta para el nombre de la pagina  -->
+	</head>
+	<body><!-- etiqueta para el cuerpo de la pagina  -->
+			<h1>Titulo de mi Web</h1><!-- etiqueta para el Titulo de la pagina  -->
+			<h2>Bienvenidos a mi web</h2><!-- etiqueta para los subtitulos  -->
+			<p><!-- etiqueta para colocar parrafos  -->
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in vulputate odio. Proin vel hendrerit mi. Nullam id diam eu tellus eleifend finibus. Proin quis enim augue. Praesent turpis tellus, porttitor sit amet odio a, finibus elementum quam. Maecenas aliquam porta massa. Integer aliquam turpis quis est ultricies, egestas convallis est aliquam.
+			</p>
+			<p>
+				Aliquam erat volutpat. Donec pellentesque maximus est non ultrices. Integer facilisis eros non dictum pellentesque. Nullam molestie, massa ut laoreet semper, ex leo posuere mi, eu consectetur ipsum diam et nunc. Maecenas semper consectetur justo, ut pharetra nibh viverra sit amet.<br/><br/><!-- etiqueta para dar salto de linea  --> Sed neque augue, finibus a vehicula at, congue non ipsum. Praesent sodales eros cursus feugiat tincidunt. In accumsan eros quis dolor congue, quis maximus diam bibendum. Aliquam eleifend tellus a lectus tincidunt, id auctor enim tempus. In in nunc et sapien dictum congue vel eu lacus. Phasellus malesuada eu diam non suscipit.
+			</p>
+			<p>
+				Mauris vel viverra nisi. Integer ultricies ultrices purus, at ullamcorper nulla vulputate finibus. Cras aliquam quam ac purus sodales suscipit. Integer aliquam massa iaculis velit posuere, a cursus velit mollis. Nunc a erat semper, ullamcorper risus at, ultrices dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur ac consequat tellus. Nam bibendum ut arcu et pharetra. Etiam ut mauris ut lectus malesuada malesuada nec in nulla. Mauris a ultrices sapien, eu vulputate diam. Maecenas metus urna, posuere eleifend euismod eu, dapibus ullamcorper urna.
+			</p>
+			<hr/><!-- etiqueta para colocar un salto de linea con linea pintada  -->
+			<h2>Imagenes en Html</h2>
+			<img alt="Imagen del Travis" title="Foto del Travis" src="imagenes/EWY46YzWAAIIIqx.jpg" width="500px" height="300px"><!-- etiqueta para colocar o insertar una imagen para nuestra pagina web con sus distintos atributos -->
+			<hr/>
+			<h3>Tercer encabezado de la pagina</h3><!-- etiqueta para colocar otro estilo de titulo en la pagina -->
+			<p>
+				Mauris vel viverra nisi. <strong>Integer ultricies ultrices purus,</strong><!-- etiqueta para colocar pen negritas el texto  --> at ullamcorper nulla vulputate finibus. Cras aliquam quam ac purus sodales suscipit. Integer aliquam massa iaculis velit posuere, a cursus velit mollis. <em>Nunc a erat semper, ullamcorper risus at,</em><!-- etiqueta para colocar texto en cursiva  --> ultrices dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				<blockquote><!-- etiqueta para colocar un parrafo con sangria  -->
+				 Curabitur ac consequat tellus. Nam bibendum ut arcu et pharetra. Etiam ut mauris ut lectus malesuada malesuada nec in nulla. Mauris a ultrices sapien, eu vulputate diam.<span id="resaltado" class="rojo amarillo"> Maecenas metus urna</span><!-- etiqueta para asignar clase, para dar estilos  -->, posuere eleifend euismod eu, dapibus ullamcorper urna.
+				 </blockquote>
+
+			</p>
+			<h3>Formulario</h3>
+			<form><!-- etiqueta para crear un formulario con atributos como "action" para indicar a donde se quiere ir  -->
+				<p>
+				<label for="nombre">Nombre</label><!-- etiqueta para inicar el nombre para el campo de texto -->
+				<input type="text" name="nombre" placeholder="Escribe tu nombre..."><!-- etiqueta para crear un campo de tipo texto -->
+				</p>
+				<p>
+				<label for="descripcion">Descripcion</label>
+				<textarea name="descripcion"></textarea><!-- etiqueta para crear un campo de tipo text area -->
+				</p>
+				<input type="radio" name="genero" value="Hombre">Hombre<br/><!-- etiqueta para crear un campo de seleccion -->
+				<input type="radio" name="genero" value="Hombre">Mujer<br/>
+				<input type="radio" name="genero" value="Hombre">Nada<br/>
+
+				<select><!-- etiqueta para crear un campo de seleccion -->
+					<option value="Hombre">Hombre</option>
+					<option value="Mujer">Mujer</option>
+					<option value="Nada">Nada</option>
+				</select>
+
+				<input type="submit" value="Enviar formulario" ><!-- etiqueta para el envio de los valores seleccionados en el formulario -->
+			</form>
+			<h3>Listado</h3>
+			 <ul><!-- etiqueta para hacer una lista de forma ordenada o "ul" para lista desordenada  -->
+				 	<li>Manzana</li>
+				 		<ul><!-- etiqueta para hacer una lista dentro de otra lista "sublista"  -->
+				 			<li>Roja</li>
+				 			<li>Verde</li>
+				 		</ul>
+				 	<li>Naranja</li>
+				 	<li>Pera</li>
+				 	<li>Sandia</li>
+				 </ul>
+
+		<h3>Tablas</h3>
+		<table border="1"><!-- etiqueta para realizar una tabla con el atributo border para bordear la tabla -->
+			<tr>
+				<th>Nombre</th><!-- etiqueta para colocar encabezados -->
+				<th>Apellido</th>
+				<th>Pais</th>
+			</tr>
+			<tr>
+				<td>Jonathan</td><!-- etiqueta para colocar atributos de una tabla -->
+				<td colspan="2">Escobar</td><!-- etiqueta para colocar espacio para los atributos de una tabla -->
+				<td>Mexico</td>
+			</tr>
+			<tr>
+				<td>Raul</td>
+				<td>Alvarez</td>
+				<td>España</td>
+			</tr>
+		</table>
+	</body>
+</html>
